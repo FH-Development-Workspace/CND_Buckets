@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./logo.png" alt="FH Development" width="220">
+<img src="https://cdn.fh-development.xyz/departmental/logos/White_Logo.jpg" alt="FH Development" width="220">
 
 # FH Development CDN
 
@@ -556,7 +556,7 @@ Content served through the CDN may have separate ownership and licensing terms.
 
 <div align="center">
 
-<img src="./logo.png" alt="FH Development" width="120">
+<img src="https://cdn.fh-development.xyz/departmental/logos/White_Logo.jpg" alt="FH Development" width="120">
 
 ## FH Development
 
