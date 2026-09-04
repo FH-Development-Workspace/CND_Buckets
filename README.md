@@ -7,9 +7,9 @@
 ### ⚡ High-performance content delivery for modern applications.
 
 [![Status](https://uptime.betterstack.com/status-badges/v2/monitor/2wyci.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
-[![CDN](https://img.shields.io/badge/CDN-Operational-1677ff?style=for-the-badge\&logo=cloudflare\&logoColor=white)](#)
-[![HTTPS](https://img.shields.io/badge/HTTPS-Enabled-1677ff?style=for-the-badge\&logo=letsencrypt\&logoColor=white)](#)
-[![Maintained](https://img.shields.io/badge/Maintained-FH%20Development-1677ff?style=for-the-badge)](#)
+[![CDN](https://img.shields.io/badge/CDN-Operational-1677ff?style=for-the-badge\&logo=cloudflare\&logoColor=white)](#-service-status)
+[![HTTPS](https://img.shields.io/badge/HTTPS-Enabled-1677ff?style=for-the-badge\&logo=letsencrypt\&logoColor=white)](#-security)
+[![Maintained](https://img.shields.io/badge/Maintained-FH%20Development-1677ff?style=for-the-badge)](#-fh-development)
 
 <br>
 
@@ -21,12 +21,12 @@
 
 <div align="center">
 
-### 🌐 Infrastructure built for the web
+### 🌐 Infrastructure built for the modern web
 
-FH Development CDN provides a reliable, developer-friendly platform for distributing
-static assets and public content across the internet.
+FH Development CDN provides fast, secure and reliable delivery of public
+assets for websites, applications and digital services.
 
-**[Documentation](#-documentation) · [Usage](#-usage) · [Status](#-service-status) · [Security](#-security)**
+**[Usage](#-usage) · [Performance](#-performance) · [Security](#-security) · [Status](#-service-status)**
 
 </div>
 
@@ -34,93 +34,44 @@ static assets and public content across the internet.
 
 ## 📖 Overview
 
-The **FH Development CDN** is a dedicated content delivery layer designed to make
-serving public assets simple, fast, and reliable.
+**FH Development CDN** is a content delivery platform operated by **FH Development**,
+built to provide dependable delivery of publicly accessible web assets.
 
-It can be used for:
+The CDN is suitable for:
 
 * 🌐 Websites
 * ⚡ Web applications
-* 📦 JavaScript packages
-* 🎨 CSS stylesheets
+* 📦 JavaScript
+* 🎨 CSS
 * 🖼️ Images
 * 🔤 Fonts
 * 🎬 Media
-* 📄 Static files
-* 🧩 Application resources
-* 📥 Public downloads
+* 📄 Documents
+* 📥 Downloads
+* 🧩 Public application resources
 
-The CDN is designed around a simple principle:
+The goal is simple:
 
-> **Your users should get the content they need, as quickly and reliably as possible.**
-
----
-
-# 🏗️ Architecture
-
-```text
-                         ┌──────────────────────┐
-                         │      End Users       │
-                         │   🌍 Worldwide        │
-                         └──────────┬───────────┘
-                                    │
-                                    ▼
-                         ┌──────────────────────┐
-                         │    FH Development    │
-                         │         CDN          │
-                         └──────────┬───────────┘
-                                    │
-                    ┌───────────────┼───────────────┐
-                    │               │               │
-                    ▼               ▼               ▼
-              ┌──────────┐   ┌──────────┐   ┌──────────┐
-              │  Static  │   │  Assets  │   │ Downloads│
-              │  Content │   │  Images  │   │  Files   │
-              └──────────┘   └──────────┘   └──────────┘
-                    │               │               │
-                    └───────────────┼───────────────┘
-                                    ▼
-                         ┌──────────────────────┐
-                         │   Origin Storage     │
-                         │ / Application Layer  │
-                         └──────────────────────┘
-```
+> **Deliver the right content, quickly and reliably, wherever your users are.**
 
 ---
 
-# ⚡ Features
+# 🚀 Why FH Development CDN?
 
 <table>
 <tr>
 <td width="50%">
 
-### 🚀 Performance
+### ⚡ Performance
 
-Optimised delivery for static resources with caching and efficient HTTP delivery.
+Optimised delivery and caching for static resources help reduce unnecessary latency and improve page load times.
 
 </td>
 <td width="50%">
 
-### 🌍 Global Availability
+### 🌍 Global Reach
 
-Public content can be accessed from anywhere with an internet connection.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### 🔒 Secure Delivery
-
-HTTPS-enabled delivery helps protect content while it travels between users and infrastructure.
-
-</td>
-<td>
-
-### 📦 Static Asset Support
-
-Designed for images, scripts, stylesheets, fonts, downloads and other public resources.
+Public resources can be accessed by users anywhere with an internet connection.
 
 </td>
 </tr>
@@ -128,16 +79,33 @@ Designed for images, scripts, stylesheets, fonts, downloads and other public res
 <tr>
 <td>
 
-### 📊 Monitoring
+### 🔒 Secure by Default
 
-Service availability is monitored through Better Stack.
+HTTPS delivery helps protect traffic between clients and the CDN.
 
 </td>
 <td>
 
-### 🛠️ Developer Friendly
+### 📊 Continuous Monitoring
 
-Simple URLs make integration with websites and applications straightforward.
+Availability is monitored through Better Stack to help identify service interruptions quickly.
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+### 🛠️ Developer First
+
+Simple, predictable URLs make integrating assets into applications straightforward.
+
+</td>
+<td>
+
+### 📦 Flexible Content
+
+Designed to support everything from small icons to larger public downloads.
 
 </td>
 </tr>
@@ -147,46 +115,48 @@ Simple URLs make integration with websites and applications straightforward.
 
 # 📡 CDN Endpoint
 
-The primary CDN endpoint is:
+The primary FH Development CDN endpoint is:
 
 ```text
-https://cdn.fhdevelopment.co.uk/
+https://cdn.fh-development.xyz/
 ```
 
-## Endpoint structure
+### Request format
 
 ```text
-https://cdn.fhdevelopment.co.uk/<path>
+https://cdn.fh-development.xyz/<path-to-resource>
 ```
 
-For example:
+### Examples
 
 ```text
-https://cdn.fhdevelopment.co.uk/assets/logo.svg
-```
-
-```text
-https://cdn.fhdevelopment.co.uk/css/main.css
+https://cdn.fh-development.xyz/assets/logo.svg
 ```
 
 ```text
-https://cdn.fhdevelopment.co.uk/js/application.js
+https://cdn.fh-development.xyz/css/main.css
 ```
 
 ```text
-https://cdn.fhdevelopment.co.uk/images/banner.webp
+https://cdn.fh-development.xyz/js/application.js
+```
+
+```text
+https://cdn.fh-development.xyz/images/banner.webp
 ```
 
 ---
 
 # 💻 Usage
 
+Integrating the CDN into an application is as simple as referencing the required resource.
+
 ## HTML
 
 ```html
 <img
-  src="https://cdn.fhdevelopment.co.uk/images/example.webp"
-  alt="Example"
+    src="https://cdn.fh-development.xyz/images/example.webp"
+    alt="Example"
 >
 ```
 
@@ -197,7 +167,7 @@ https://cdn.fhdevelopment.co.uk/images/banner.webp
 ```css
 .hero {
     background-image: url(
-        "https://cdn.fhdevelopment.co.uk/images/hero.webp"
+        "https://cdn.fh-development.xyz/images/hero.webp"
     );
 }
 ```
@@ -208,7 +178,7 @@ https://cdn.fhdevelopment.co.uk/images/banner.webp
 
 ```html
 <script
-    src="https://cdn.fhdevelopment.co.uk/js/application.js">
+    src="https://cdn.fh-development.xyz/js/application.js">
 </script>
 ```
 
@@ -219,7 +189,21 @@ https://cdn.fhdevelopment.co.uk/images/banner.webp
 ```html
 <link
     rel="stylesheet"
-    href="https://cdn.fhdevelopment.co.uk/css/main.css">
+    href="https://cdn.fh-development.xyz/css/main.css"
+>
+```
+
+---
+
+## Fonts
+
+```css
+@font-face {
+    font-family: "FHFont";
+    src: url(
+        "https://cdn.fh-development.xyz/fonts/example.woff2"
+    ) format("woff2");
+}
 ```
 
 ---
@@ -227,348 +211,446 @@ https://cdn.fhdevelopment.co.uk/images/banner.webp
 ## Markdown
 
 ```markdown
-![FH Development](https://cdn.fhdevelopment.co.uk/images/logo.png)
+![FH Development](https://cdn.fh-development.xyz/images/logo.png)
 ```
 
 ---
 
-# 🗂️ Recommended Asset Structure
+# 🌐 HTTP Support
 
-For larger projects, we recommend keeping assets organised using predictable paths.
+The CDN is designed around standard HTTP delivery.
 
-```text
-/
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── fonts/
-│
-├── css/
-│   ├── main.css
-│   └── components.css
-│
-├── js/
-│   ├── application.js
-│   └── components.js
-│
-├── media/
-│   ├── video/
-│   └── audio/
-│
-└── downloads/
-    └── ...
-```
+### Common methods
 
-This makes assets easier to discover, maintain and reference.
+| Method    | Purpose                             |
+| --------- | ----------------------------------- |
+| `GET`     | Retrieve a resource                 |
+| `HEAD`    | Inspect resource headers            |
+| `OPTIONS` | Inspect supported request behaviour |
+
+For most integrations, `GET` is all that is required.
 
 ---
 
-# 🧠 Caching Strategy
+# 📦 Content Types
 
-CDN performance depends heavily on effective caching.
+The CDN can be used for common web content including:
 
-For versioned assets, we recommend immutable filenames:
+| Category  | Examples                             |
+| --------- | ------------------------------------ |
+| Images    | PNG, JPG, JPEG, GIF, SVG, WebP, AVIF |
+| Styles    | CSS                                  |
+| Scripts   | JavaScript                           |
+| Fonts     | WOFF, WOFF2, TTF, OTF                |
+| Documents | PDF, TXT                             |
+| Media     | MP4, WebM, MP3                       |
+| Archives  | ZIP, TAR, GZ                         |
+| Data      | JSON, XML                            |
+
+Actual availability depends on the individual resource and server configuration.
+
+---
+
+# 🧠 Caching
+
+Caching is an important part of CDN performance.
+
+For assets that rarely change, versioned filenames are recommended.
+
+### Recommended
 
 ```text
 application.8f32c1.js
 ```
 
-instead of:
+### Avoid where possible
 
 ```text
 application.js
 ```
 
-### Recommended workflow
+Versioned assets allow deployments to introduce new resources without relying on
+users or intermediary caches to immediately discard an older version.
+
+### Example deployment
 
 ```text
-Source
-  │
-  ▼
+Application
+     │
+     ▼
 Build
-  │
-  ▼
-Version / Hash Assets
-  │
-  ▼
-Upload
-  │
-  ▼
+     │
+     ▼
+Version Assets
+     │
+     ▼
+Publish
+     │
+     ▼
 FH Development CDN
-  │
-  ▼
-Users
+     │
+     ▼
+     🌍 Users
 ```
 
-Versioning assets allows new releases to coexist with older cached resources without
-requiring users to manually clear their cache.
+---
+
+# ♻️ Asset Versioning
+
+For frequently updated resources, use a version identifier.
+
+### Version based
+
+```text
+https://cdn.fh-development.xyz/js/app-v2.js
+```
+
+### Hash based
+
+```text
+https://cdn.fh-development.xyz/js/app.4d92fa1.js
+```
+
+Hash-based filenames are particularly useful for automated build pipelines.
+
+---
+
+# ⚡ Performance
+
+FH Development CDN is designed around efficient static-content delivery.
+
+For the best results:
+
+* Use modern image formats such as WebP or AVIF where appropriate.
+* Compress JavaScript and CSS before publishing.
+* Use WOFF2 for modern web fonts.
+* Avoid unnecessarily large assets.
+* Version frequently changing resources.
+* Cache resources that do not change frequently.
+* Avoid using the CDN for private application data.
+
+### Example
+
+Instead of delivering:
+
+```text
+hero-original-8mb.png
+```
+
+consider:
+
+```text
+hero.webp
+```
+
+with appropriate compression and dimensions.
 
 ---
 
 # 🔐 Security
 
-The CDN is intended for **publicly accessible content**.
+The CDN should be treated as **public infrastructure**.
 
-### Never upload:
+Anything published to the CDN should be considered potentially accessible by anyone.
+
+### 🚫 Never publish
+
+```text
+.env
+```
+
+```text
+database-password.txt
+```
+
+```text
+api-keys.json
+```
+
+```text
+private-config.json
+```
+
+```text
+credentials.json
+```
+
+Never expose:
 
 * ❌ Passwords
 * ❌ API keys
 * ❌ Authentication tokens
-* ❌ Private credentials
 * ❌ Database credentials
-* ❌ `.env` files
-* ❌ Private customer information
-* ❌ Internal configuration
-* ❌ Sensitive application data
+* ❌ Private configuration
+* ❌ Customer information
+* ❌ Personal information
+* ❌ Internal secrets
 
-A CDN asset should be treated as public once it has been published.
-
-### Example
-
-**❌ Do not do this:**
+### ✅ Safe examples
 
 ```text
-cdn.fhdevelopment.co.uk/config/production.env
+/assets/logo.svg
+/assets/icons/menu.svg
+/css/application.css
+/js/application.js
+/images/banner.webp
+/fonts/inter.woff2
 ```
 
-**✅ Prefer this:**
+---
+
+# 🛡️ HTTPS
+
+All CDN resources should be requested using HTTPS:
 
 ```text
-cdn.fhdevelopment.co.uk/assets/application.js
+https://cdn.fh-development.xyz/
+```
+
+Avoid embedding CDN resources using unsecured HTTP:
+
+```text
+http://cdn.fh-development.xyz/
+```
+
+HTTPS provides encrypted transport between the client and the CDN endpoint.
+
+---
+
+# 🧪 Testing
+
+You can inspect a CDN resource using `curl`.
+
+### Check headers
+
+```bash
+curl -I https://cdn.fh-development.xyz/example/file.css
+```
+
+### Download a resource
+
+```bash
+curl -L \
+    https://cdn.fh-development.xyz/example/file.css
+```
+
+### Follow redirects
+
+```bash
+curl -IL \
+    https://cdn.fh-development.xyz/example/file.css
 ```
 
 ---
 
 # 📊 Service Status
 
-Current service availability is monitored through Better Stack.
+FH Development infrastructure is monitored through Better Stack.
 
 <div align="center">
 
-[![Better Stack Badge](https://uptime.betterstack.com/status-badges/v2/monitor/2wyci.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+[![Better Stack Status](https://uptime.betterstack.com/status-badges/v2/monitor/2wyci.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
+### Real-time monitoring
+
+**CDN availability · HTTP availability · Infrastructure monitoring**
 
 </div>
 
-### Monitoring
+### Service overview
 
-| Component          | Monitoring      |
-| ------------------ | --------------- |
-| CDN Endpoint       | 🟢 Active       |
-| HTTP Delivery      | 🟢 Active       |
-| HTTPS              | 🟢 Active       |
-| Asset Availability | 🟢 Active       |
-| Uptime Monitoring  | 🟢 Better Stack |
+| Service        | Status         |
+| -------------- | -------------- |
+| CDN            | 🟢 Operational |
+| HTTPS          | 🟢 Operational |
+| HTTP Delivery  | 🟢 Operational |
+| Asset Delivery | 🟢 Operational |
+| Monitoring     | 🟢 Active      |
 
-> **Important:** The table above is informational. For real-time availability, use the Better Stack monitor.
+> For the latest real-time service information, refer to the Better Stack monitor above.
 
 ---
 
-# 🚨 Incidents
+# 🚨 Incident Management
 
-If an outage or degradation occurs, service information should be published through the
-official FH Development status infrastructure.
-
-### During an incident
+If an incident affects CDN availability, FH Development infrastructure can be investigated
+and restored using a structured incident process.
 
 ```text
-Incident detected
-       │
-       ▼
-Infrastructure investigated
-       │
-       ▼
-Impact identified
-       │
-       ▼
-Mitigation applied
-       │
-       ▼
-Service restored
-       │
-       ▼
-Incident reviewed
+┌─────────────────────┐
+│   Incident Detected │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Investigate       │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Identify Impact   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Apply Mitigation  │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Restore Service   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│   Review & Improve  │
+└─────────────────────┘
 ```
-
-Post-incident improvements should be incorporated into the infrastructure where appropriate.
 
 ---
 
-# 📈 Performance Philosophy
+# 📈 Reliability
 
-FH Development CDN follows a few core principles:
+Reliable infrastructure requires more than simply serving files.
 
-### 01 — Keep content close to users
+FH Development focuses on:
 
-Reduce unnecessary distance between users and the content they request.
+### 01 — Availability
 
-### 02 — Cache aggressively where appropriate
+Keep public resources accessible whenever users need them.
 
-Static resources should be cached whenever their lifecycle allows it.
+### 02 — Performance
 
-### 03 — Version your assets
+Minimise unnecessary latency and optimise static resource delivery.
 
-Immutable asset versions make deployments safer and more predictable.
+### 03 — Observability
 
-### 04 — Keep URLs predictable
+Monitor infrastructure continuously and identify failures quickly.
 
-A clean URL structure makes integration and debugging easier.
+### 04 — Security
 
-### 05 — Monitor continuously
+Keep public infrastructure separate from sensitive application systems.
 
-Infrastructure should be monitored rather than assumed to be operational.
+### 05 — Maintainability
 
----
-
-# 🧪 Testing
-
-Before publishing an asset, verify that it can be accessed correctly.
-
-```bash
-curl -I https://cdn.fhdevelopment.co.uk/example/file.css
-```
-
-You should receive an appropriate HTTP response from the CDN.
-
-You can also test an asset directly:
-
-```bash
-curl -L \
-  https://cdn.fhdevelopment.co.uk/example/file.css
-```
+Use predictable URLs, versioned resources and documented practices.
 
 ---
 
 # 🔧 Developer Checklist
 
-Before publishing an asset:
+Before publishing a resource:
 
-* [ ] File is intended to be public
-* [ ] No credentials are included
-* [ ] No private information is included
-* [ ] Filename is production-ready
-* [ ] Asset has been tested
-* [ ] Correct MIME type is being served
+* [ ] Resource is intended to be public
+* [ ] No credentials are present
+* [ ] No secrets are present
+* [ ] Resource has been tested
+* [ ] MIME type is correct
+* [ ] Asset is appropriately compressed
 * [ ] Cache behaviour is appropriate
 * [ ] Versioning is used where required
-* [ ] Asset URL has been verified
-
----
-
-# 📚 Documentation
-
-Documentation for individual projects can be maintained alongside their respective
-repositories.
-
-A typical integration looks like:
-
-```text
-Project
-   │
-   ├── Source Code
-   │
-   ├── Build System
-   │
-   └── Public Assets
-          │
-          ▼
-    FH Development CDN
-          │
-          ▼
-       End Users
-```
+* [ ] HTTPS URL works correctly
+* [ ] Resource does not contain private information
 
 ---
 
 # 🛣️ Roadmap
 
-Potential future improvements include:
+Future improvements may include:
 
-* [ ] Expanded edge infrastructure
-* [ ] Improved cache controls
-* [ ] Automated asset publishing
-* [ ] Deployment automation
-* [ ] CDN analytics
-* [ ] Additional monitoring
+* [ ] Expanded CDN infrastructure
+* [ ] Additional edge locations
+* [ ] Advanced cache management
+* [ ] Automated deployments
 * [ ] Automated cache invalidation
+* [ ] CDN analytics
+* [ ] Advanced monitoring
 * [ ] Developer API
-* [ ] Asset management tooling
-* [ ] Advanced security controls
+* [ ] Automated asset optimisation
+* [ ] Additional security controls
 
-> Roadmap items are subject to change based on infrastructure requirements and project priorities.
+> Roadmap items may change as FH Development infrastructure evolves.
 
 ---
 
 # 🏢 FH Development
 
-**FH Development** is focused on building reliable software, web infrastructure and
-developer-focused services.
+**FH Development** builds software, infrastructure and developer-focused services
+with an emphasis on performance, reliability and maintainability.
 
-Our infrastructure is designed around:
+Our infrastructure philosophy:
 
 ```text
-Reliability
-     +
-Performance
-     +
-Security
-     +
-Developer Experience
-     │
-     ▼
-FH Development
+                 ┌───────────────┐
+                 │  Performance  │
+                 └───────┬───────┘
+                         │
+        ┌────────────────┼────────────────┐
+        │                │                │
+        ▼                ▼                ▼
+┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+│ Reliability │  │   Security  │  │ Developers  │
+└──────┬──────┘  └──────┬──────┘  └──────┬──────┘
+       │                │                │
+       └────────────────┼────────────────┘
+                        ▼
+                ┌───────────────┐
+                │ FH Development│
+                └───────────────┘
 ```
 
 ---
 
 # 🤝 Contributing
 
-If this repository contains configuration, documentation or tooling related to the
-FH Development CDN, contributions are welcome where appropriate.
-
-### Suggested workflow
+Changes to documentation, configuration or supporting tooling should be made through
+the normal GitHub contribution process.
 
 ```bash
-git clone <repository>
-cd <repository>
-
 git checkout -b feature/my-change
 
-# Make your changes
-
 git add .
-git commit -m "feat: improve CDN configuration"
+git commit -m "docs: improve CDN documentation"
 
 git push origin feature/my-change
 ```
 
-Then open a pull request with a clear description of the changes.
+Pull requests should clearly describe:
+
+* What changed
+* Why it changed
+* Any infrastructure impact
+* Any potential breaking changes
 
 ---
 
 # 📜 Licence
 
-Unless otherwise specified, the source code, configuration and documentation in this
-repository are subject to the licence provided with the project.
+Unless otherwise specified, the code and documentation in this repository are provided
+under the licence associated with the project.
 
-Content served through the CDN may have separate ownership and licensing terms.
+Assets delivered through the CDN may have separate ownership or licensing requirements.
 
 ---
 
 <div align="center">
 
-<img src="https://cdn.fh-development.xyz/departmental/logos/White_Logo.jpg" alt="FH Development" width="120">
+<img src="https://cdn.fh-development.xyz/departmental/logos/White_Logo.jpg" alt="FH Development" width="130">
 
-## FH Development
+# FH Development
 
-**Build better. Deliver faster.**
+### Build better. Deliver faster.
 
 <br>
 
 [![Better Stack](https://uptime.betterstack.com/status-badges/v2/monitor/2wyci.svg)](https://uptime.betterstack.com/?utm_source=status_badge)
+
+<br>
+
+**⚡ Fast · 🔒 Secure · 🌍 Reliable**
 
 <br><br>
 
 `© FH Development`
 
 </div>
-
